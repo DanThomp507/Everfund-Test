@@ -18002,6 +18002,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"moment@npm:^2.29.4":
+  version: 2.29.4
+  resolution: "moment@npm:2.29.4"
+  checksum: 844c6f3ce42862ac9467c8ca4f5e48a00750078682cc5bda1bc0e50cc7ca88e2115a0f932d65a06e4a90e26cb78892be9b3ca3dd6546ca2c4d994cebb787fc2b
+  languageName: node
+  linkType: hard
+
 "move-concurrently@npm:^1.0.1":
   version: 1.0.1
   resolution: "move-concurrently@npm:1.0.1"
@@ -21558,6 +21565,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@redwoodjs/core": 5.0.3
+    moment: ^2.29.4
     prettier-plugin-tailwindcss: ^0.2.8
   languageName: unknown
   linkType: soft
