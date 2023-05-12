@@ -24,13 +24,33 @@ export const schema = gql`
 
   """
   About queries
-  TODO: Add GraphQL query / queries to fetch payment statistics
   """
   type Query {
     "Fetch Payments."
-    payments: [Payment!]! @requireAuth
+    payments(nonProfitId: Int!): [Payment!]! @requireAuth
 
     "Fetch a Payment by id."
     payment(id: Int!): Payment @requireAuth
+
+    "Fetch Donations Failed."
+    donationsFailed(id: Int!): Int! @requireAuth
+
+    "Fetch Top Donations."
+    topDonations(nonProfitId: Int!): [Payment!]! @requireAuth
+
+    "Fetch Donations Succeeded."
+    donationsSucceeded(id: Int!): Int! @requireAuth
+
+    "Fetch Donations Pending."
+    donationsPending(id: Int!): Int! @requireAuth
+
+    "Fetch Total Number of Donations."
+    totalDonations(id: Int!): Int! @requireAuth
+
+    "Fetch Total Donations Value."
+    totalDonationsValue(id: Int!): Int! @requireAuth
+
+    "Fetch Donations With Gift Aid."
+    giftAidDonations(id: Int!): Int! @requireAuth
   }
 `
