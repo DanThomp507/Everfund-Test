@@ -42,8 +42,10 @@ export const totalDonationsValue: QueryResolvers['totalDonationsValue'] =
       },
     })
     // we add up all the amountPaid values for each payment
-    const totalAmount =
-      payments.reduce((total, payment) => total + payment.amountPaid, 0) / 100
+    const totalAmount = payments.reduce(
+      (total, payment) => total + payment.amountPaid,
+      0
+    )
     return totalAmount
   }
 
